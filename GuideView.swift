@@ -72,7 +72,7 @@ class GuideView: UIViewController{
     }
     
     //Function Play Sound
-    public func playSound(file: String, fileExtension: String, isLoop: Bool = false){
+  public func playSound(file: String, fileExtension: String, isLoop: Bool = false){
         soundURI = URL(fileURLWithPath: Bundle.main.path(forResource: file, ofType: fileExtension)!)
         do {
             guard let uri = soundURI else {return}
